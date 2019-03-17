@@ -2,6 +2,21 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Habit tracking app to get your life on track.
+
+// List habits on left, set desired amount times to partake per week
+// User can add habits and set number
+// Habits are broken down by categories
+    // Personal
+    // Health/Fitness
+    // Financial
+    // etc.
+// Days of week are displayed
+// User can check off activities when they have been completed
+// Reminders sent when goals are not close to being met for the week
+// Notes section
+
+
 class App extends Component {
   render() {
     return (
@@ -9,16 +24,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Habit tracking app to get your life on track.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
