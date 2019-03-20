@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+
+const Header = styled.div`
+  
+`;
+
+const Container = styled.div`
+  width: '80%';
+  background: 'white';
+`;
 
 // Habit tracking app to get your life on track.
 
@@ -22,12 +32,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
             Habit tracking app to get your life on track.
           </p>
         </header>
+        <Container>
+          <h3>Test</h3>
+        </Container>
       </div>
+
+
+
     );
   }
 }
