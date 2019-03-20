@@ -4,12 +4,19 @@ import './App.css';
 import styled from 'styled-components';
 
 const Header = styled.div`
-  
+
+`;
+
+const Title = styled.h3`
+  margin-top: 0;
+  padding-top: 20px;
 `;
 
 const Container = styled.div`
-  width: '80%';
-  background: 'white';
+  min-height: 75vh;
+  width: 80%;
+  background: white;
+  margin: auto;
 `;
 
 // Habit tracking app to get your life on track.
@@ -37,7 +44,7 @@ class App extends Component {
           </p>
         </header>
         <Container>
-          <h3>Test</h3>
+          <Title>Test</Title>
         </Container>
       </div>
 
