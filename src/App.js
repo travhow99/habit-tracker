@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import initialData from './initial-data';
 import './App.css';
 import styled from 'styled-components';
 
@@ -13,10 +14,19 @@ const Title = styled.h3`
 `;
 
 const Container = styled.div`
-  min-height: 75vh;
-  width: 80%;
+  min-height: 100vh;
+  width: 100%;
   background: white;
   margin: auto;
+`;
+
+const Category = styled.div`
+  margin: 10px;
+  border: 2px solid lightgrey;
+`;
+
+const Habit = styled.li`
+  background: dodgerblue;
 `;
 
 // Habit tracking app to get your life on track.
@@ -35,7 +45,10 @@ const Container = styled.div`
 
 
 class App extends Component {
+  state = initialData;
+
   render() {
+    console.log(this.state.categories.primary);
     return (
       <div className="App">
         <header className="App-header">
@@ -45,6 +58,10 @@ class App extends Component {
         </header>
         <Container>
           <Title>Test</Title>
+          <Category>
+
+            {}
+          </Category>
         </Container>
       </div>
 
